@@ -10,7 +10,7 @@ const ProductPage = () => {
   const handleAddToQuote = () => {
     setIframeOpen(true);
     // Navigate to the QuotePage route when "Add to Quote" is clicked
-s  };
+  };
 
   // Function to handle quantity change
   const handleQuantityChange = (change) => {
