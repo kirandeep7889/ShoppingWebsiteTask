@@ -2,7 +2,7 @@
     "redirects": [
       {
         "source": "/quote",
-        "destination": "/index.html",
+        "destination": "/quote",
         "permanent": true
       }
     ]
