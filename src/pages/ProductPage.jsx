@@ -10,6 +10,7 @@ const ProductPage = () => {
   const handleAddToQuote = () => {
     setIframeOpen(true);
     // Navigate to the QuotePage route when "Add to Quote" is clicked
+    // navigate("/quote");
   };
 
   // Function to handle quantity change
@@ -105,7 +106,7 @@ const ProductPage = () => {
     onClick={() => setIframeOpen(false)}
   >
     <iframe
-      src="https://shopping-website-task.vercel.app/quote"
+      src="/quote"
       className="w-full h-full"  // Ensures iframe takes full width and height
       title="Quote Modal"
       frameBorder="0"
