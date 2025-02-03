@@ -1,15 +1,16 @@
 import React, { useState } from "react";
+import  {useNavigate} from 'react-router-dom';
 
 const ProductPage = () => {
   const [quantity, setQuantity] = useState(2);
   const [isQuoteModalOpen, setQuoteModalOpen] = useState(false);
   const [isIframeOpen, setIframeOpen] = useState(false);
+  const navigate=useNavigate();
 
   const handleAddToQuote = () => {
     setIframeOpen(true);
     // Navigate to the QuotePage route when "Add to Quote" is clicked
-    // navigate("/quote");
-  };
+s  };
 
   // Function to handle quantity change
   const handleQuantityChange = (change) => {
@@ -104,7 +105,7 @@ const ProductPage = () => {
     onClick={() => setIframeOpen(false)}
   >
     <iframe
-      src="/quote"
+      src="https://shopping-website-task.vercel.app/quote"
       className="w-full h-full"  // Ensures iframe takes full width and height
       title="Quote Modal"
       frameBorder="0"
